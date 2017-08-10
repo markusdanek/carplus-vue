@@ -35,24 +35,32 @@
   .section-hero {
   	@extend %hero;
   	height: 600px;
-  	h1.startpage {
-  		@include rem(font-size, 46px);
-  		line-height: 56px;
-  		font-family: 'Open Sans';
-  		font-weight: bolder;
-  		text-transform: uppercase;
-  	}
-  	h2.startpage {
-  		@include rem(font-size, 24px);
-  		font-family: 'Open Sans';
-  		font-weight: lighter;
-  	}
-  	.hero-image {
-  		// background-color: $color-black;
+
+    .hero-image {
   		top: -80px;
   		.image-src {
   			opacity: 0.2;
   		}
   	}
+
+    .hero-text {
+      height: 600px;
+      font-family: "proxima-nova";
+
+      h1.startpage {
+    		@include rem(font-size, 46px);
+    		line-height: 56px;
+    		// font-family: 'Kreon';
+    		font-family: "proxima-nova";
+    		text-transform: uppercase;
+        flex: 1;
+    	}
+    	h2.startpage {
+    		@include rem(font-size, 24px);
+    		// font-family: 'Open Sans';
+    		font-family: "proxima-nova";
+    		font-weight: lighter;
+    	}
+    }
   }
 </style>
