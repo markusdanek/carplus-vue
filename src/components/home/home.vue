@@ -7,15 +7,10 @@
       <div class="hero-text">
         <div class="text container">
           <h1 class="startpage">
-            Willkommen in der carplus Vorteilswelt
+            {{heroWelcome}}
           </h1>
           <h2 class="startpage">
-            carplus ist der perfekte Partner des Kfz-Gewerbes rund um Versicherungsangelegenheiten.
-            Die carplus Branchenspezialisten bieten zusammen mit den Experten der
-            Wiener Städtischen Versicherung ein einzigartiges Servicenetz für
-            Autohäuser und deren Kunden. carplus-Autohauspartner verfügen damit
-            über viele exklusive Produkt- und Servicevorteile. So wird Ihr Autohaus
-            zur Vorteilswelt.
+            {{heroText}}
           </h2>
         </div>
       </div>
@@ -25,7 +20,18 @@
 
 <script>
   export default {
-    name: 'home'
+    name: 'home',
+    data() {
+      return {
+        heroWelcome: 'Willkommen in der carplus Vorteilswelt',
+        heroText: `carplus ist der perfekte Partner des Kfz-Gewerbes rund um
+        Versicherungsangelegenheiten. Die carplus Branchenspezialisten bieten
+        zusammen mit den Experten der Wiener Städtischen Versicherung ein einzigartiges
+        Servicenetz für Autohäuser und deren Kunden. carplus-Autohauspartner verfügen
+        damit über viele exklusive Produkt- und Servicevorteile. So wird Ihr Autohaus
+        zur Vorteilswelt.`
+      }
+    }
   }
 </script>
 
@@ -35,29 +41,25 @@
   .section-hero {
   	@extend %hero;
   	height: 600px;
-
     .hero-image {
   		top: -80px;
   		.image-src {
   			opacity: 0.2;
   		}
   	}
-
     .hero-text {
       height: 600px;
       font-family: "proxima-nova";
-
       h1.startpage {
-    		@include rem(font-size, 46px);
+    		@include rem(font-size, 56px);
     		line-height: 56px;
-    		// font-family: 'Kreon';
     		font-family: "proxima-nova";
-    		text-transform: uppercase;
-        flex: 1;
+        font-weight: bold;
+        // font-family: 'Kreon';
+    		// font-family: 'Open Sans';
     	}
     	h2.startpage {
     		@include rem(font-size, 24px);
-    		// font-family: 'Open Sans';
     		font-family: "proxima-nova";
     		font-weight: lighter;
     	}
