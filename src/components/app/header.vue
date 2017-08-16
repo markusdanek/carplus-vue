@@ -9,7 +9,7 @@
         <b-nav is-nav-bar class="ml-auto">
           <b-nav-item>Home</b-nav-item>
           <b-nav-item>carplus</b-nav-item>
-          <b-nav-item>PLUS</b-nav-item>
+          <b-nav-item>PLUS Angebote</b-nav-item>
           <b-nav-item>Partner Login</b-nav-item>
           <b-nav-item>Presse</b-nav-item>
           <b-nav-item>Formulare</b-nav-item>

@@ -39,7 +39,7 @@
         font-family: $font-regular, "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
         color: $color-black-medium;
         border-right: 10px solid $color-red-carplus;
-        background: $color-background;
+        background: $color-background !important;
     }
     .container {
         @include rem((padding: 0));
