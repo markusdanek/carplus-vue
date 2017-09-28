@@ -20,8 +20,8 @@
     }
 </script>
 
-<style>
-    @import "~/styles/util/util.scss";
+<style lang="scss">
+    @import "./styles/util/color.scss";
 
     body,
     html {
@@ -35,11 +35,10 @@
         min-height: 100%;
     }
     body {
-        @include rem((padding-top: 80px));
+        // @include rem((padding-top: 80px));
         font-family: $font-regular, "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
         color: $color-black-medium;
-        border-right: 10px solid $color-red-carplus;
-        background: $color-background !important;
+        background: $color-background;
     }
     .container {
         @include rem((padding: 0));
