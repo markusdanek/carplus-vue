@@ -1,7 +1,7 @@
 <template>
   <div class="section-hero">
     <div class="hero-image">
-      <div class="image-src" style="background-image: url('./static/images/hero/hero-home-1.png')"></div>
+      <div class="image-src" style="background-image: url('./static/images/hero/carplus_Image_21.jpg')"></div>
     </div>
     <div class="container">
       <div class="hero-text">
@@ -10,11 +10,7 @@
             {{ text_hero_title }}
           </h1>
           <h2 class="startpage">
-            {{ text_hero_desc_1 }}
-            <br />
-            {{ text_hero_desc_2 }}
-            <br /> <br />
-            {{ text_hero_desc_4 }}
+            {{ text_hero_sub }}
           </h2>
         </div>
       </div>
@@ -24,18 +20,11 @@
 
 <script>
   export default {
-    name: 'home',
+    name: 'home-hero',
     data() {
       return {
-        text_hero_title: 'Willkommen in der carplus Vorteilswelt',
-        text_hero_desc_1: `carplus ist der perfekte Partner des Kfz-Gewerbes rund um
-          Versicherungsangelegenheiten.`,
-        text_hero_desc_2: `Die carplus Branchenspezialisten bieten
-          zusammen mit den Experten der Wiener Städtischen Versicherung ein einzigartiges
-          Servicenetz für Autohäuser und deren Kunden.`,
-        text_hero_desc_3: `carplus-Autohauspartner verfügen damit über viele
-          exklusive Produkt- und Servicevorteile.`,
-        text_hero_desc_4: `So wird Ihr Autohaus zur Vorteilswelt.`
+        text_hero_title: 'Wo gefahren wird, lauern Gefahren.',
+        text_hero_sub: 'Die Kfz-Versicherung der carplus nimmt Ihr Auto in Österreich und Europa in Schutz.'
       }
     }
   }
@@ -49,9 +38,17 @@
   	height: 600px;
     .hero-image {
   		top: -80px;
-      background-color: transparent;
+      background: $color-black;
+      // background: rgba(0,0,0,0.5);
+      // background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
+      // background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,0.5)), color-stop(100%, rgba(227,43,41,1)));
+      // background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
+      // background: -o-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
+      // background: -ms-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
+      // background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
+      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#e32b29', GradientType=1 );
   		.image-src {
-  			opacity: 1;
+  			opacity: 0.5;
   		}
   	}
     .hero-text {

@@ -1,5 +1,8 @@
 <template>
   <header>
+    <b-row>
+      Hi
+    </b-row>
     <b-navbar toggleable type="inverse" variant="">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-link class="navbar-brand" to="#">
@@ -30,7 +33,9 @@
 <style lang="scss">
   .navbar-toggleable .navbar-nav .nav-link {
     margin-right: 2.5rem;
-    color: rgba(#FFF, 0.6);
+    color: rgba(#FFF, 1);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0.5rem;
     &:hover {
       color: #FFF;
       border-bottom: 1px solid #FFF;
