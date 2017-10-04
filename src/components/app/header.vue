@@ -1,23 +1,19 @@
 <template>
   <header>
-    <b-row>
-      Hi
-    </b-row>
-    <b-navbar toggleable type="inverse" variant="">
+    <b-navbar toggleable="md" type="dark" sticky>
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-      <b-link class="navbar-brand" to="#">
-        <span>carplus.at</span>
-      </b-link>
+      <b-navbar-brand href="#">
+        <img src="/static/images/carplus_logo_white.svg" height="40" lt="carplus">
+      </b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar class="ml-auto">
-          <b-nav-item>Home</b-nav-item>
-          <b-nav-item>carplus</b-nav-item>
-          <b-nav-item>PLUS Angebote</b-nav-item>
-          <b-nav-item>Partner Login</b-nav-item>
-          <b-nav-item>Presse</b-nav-item>
-          <b-nav-item>Formulare</b-nav-item>
-          <b-nav-item>KFZ-Zulassung</b-nav-item>
-          <b-nav-item>Kontakt</b-nav-item>
+          <b-nav-item href="#">carplus</b-nav-item>
+          <b-nav-item href="#">PLUS Angebote</b-nav-item>
+          <b-nav-item href="#">Partner Login</b-nav-item>
+          <b-nav-item href="#">Presse</b-nav-item>
+          <b-nav-item href="#">Formulare</b-nav-item>
+          <b-nav-item href="#">KFZ-Zulassung</b-nav-item>
+          <b-nav-item href="#">Kontakt</b-nav-item>
         </b-nav>
       </b-collapse>
     </b-navbar>
@@ -31,14 +27,17 @@
 </script>
 
 <style lang="scss">
-  .navbar-toggleable .navbar-nav .nav-link {
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(#FFF, 1);
+  }
+  .nav-item {
     margin-right: 2.5rem;
     color: rgba(#FFF, 1);
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     padding-bottom: 0.5rem;
     &:hover {
-      color: #FFF;
-      border-bottom: 1px solid #FFF;
+      color: rgba(#FFF, 1);
+      border-bottom: 2px solid #FFF;
       padding-bottom: 0.5rem;
     }
   }
