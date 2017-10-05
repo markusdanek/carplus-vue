@@ -30,8 +30,11 @@
   .navbar-dark .navbar-nav .nav-link {
     color: rgba(#FFF, 1);
   }
+  .collapse.show {
+    background: $color-black-medium;
+  }
   .nav-item {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
     color: rgba(#FFF, 1);
     border-bottom: 2px solid transparent;
     padding-bottom: 0.5rem;
