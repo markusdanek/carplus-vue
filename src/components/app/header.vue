@@ -6,7 +6,7 @@
         <img src="/static/images/carplus_logo_white.svg" height="40" lt="carplus">
       </b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
-        <b-nav is-nav-bar class="ml-auto">
+        <b-navbar-nav class="ml-auto">
           <b-nav-item href="#">carplus</b-nav-item>
           <b-nav-item href="#">PLUS Angebote</b-nav-item>
           <b-nav-item href="#">Partner Login</b-nav-item>
@@ -14,7 +14,7 @@
           <b-nav-item href="#">Formulare</b-nav-item>
           <b-nav-item href="#">KFZ-Zulassung</b-nav-item>
           <b-nav-item href="#">Kontakt</b-nav-item>
-        </b-nav>
+        </b-navbar-nav>
       </b-collapse>
     </b-navbar>
   </header>
