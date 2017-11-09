@@ -2,14 +2,14 @@
   <div class="home-intro">
     <div class="top">
 		    <div class="sub"></div>
-        <div class="home-intro-text" offset-md="1">
+        <b-col class="home-intro-text" offset="1">
           <b-row>
-            <b-col sm="12" md="2">
+            <b-col sm="12" md="3" lg="2">
               <h1>
                 Willkommen in der carplus Vorteilswelt
               </h1>
             </b-col>
-            <b-col sm="12" md="8" offset="1">
+            <b-col sm="12" md="6" lg="7" offset="1">
               <h2>
                 carplus ist der perfekte Partner des Kfz-Gewerbes rund um Versicherungsangelegenheiten.
                 Die carplus Branchenspezialisten bieten zusammen mit den Experten der
@@ -20,7 +20,7 @@
               </h2>
             </b-col>
           </b-row>
-        </div>
+        </b-col>
 	  </div>
   </div>
 </template>
@@ -41,7 +41,7 @@
     .top {
       overflow: hidden;
       max-width: 100%;
-      min-height: 500px;
+      min-height: 650px;
       background-image: linear-gradient(-180deg, #FFFFFF 0%, #F5F8FC 100%);
       box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.05);
       width: 100%;
