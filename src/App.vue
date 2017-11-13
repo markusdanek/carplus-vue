@@ -10,13 +10,12 @@
 
 <script>
     import Vue from 'vue'
-    import App_Header from '@/components/app/Header'
-    import App_Footer from '@/components/app/Footer'
-    Vue.component('app-header', App_Header);
-    Vue.component('app-footer', App_Footer);
+    import AppHeader from '@/components/app/header'
+    import AppFooter from '@/components/app/footer'
 
     export default {
-      name: 'app'
+      name: 'app',
+      components: { AppHeader, AppFooter }
     }
 </script>
 

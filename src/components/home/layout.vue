@@ -2,21 +2,19 @@
   <div>
     <home-hero></home-hero>
     <home-intro></home-intro>
-    <press-articles></press-articles>
+    <home-press></home-press>
   </div>
 </template>
 
 <script>
   import Vue from 'vue'
-  import Home_Hero from '@/components/home/hero'
-  import Home_Intro from '@/components/home/intro'
-  import Press_Articles from '@/components/home/press'
-  Vue.component('home-hero', Home_Hero);
-  Vue.component('home-intro', Home_Intro);
-  Vue.component('press-articles', Press_Articles);
+  import HomeHero from '@/components/home/hero'
+  import HomeIntro from '@/components/home/intro'
+  import HomePress from '@/components/home/press'
 
   export default {
-    name: 'home-layout'
+    name: 'home-layout',
+    components: { HomeHero, HomeIntro, HomePress }
   }
 </script>
 
