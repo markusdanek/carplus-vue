@@ -39,14 +39,6 @@
     .hero-image {
   		top: -80px;
       background: $color-black;
-      // background: rgba(0,0,0,0.5);
-      // background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
-      // background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,0.5)), color-stop(100%, rgba(227,43,41,1)));
-      // background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
-      // background: -o-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
-      // background: -ms-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
-      // background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(227,43,41,1) 100%);
-      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#e32b29', GradientType=1 );
   		.image-src {
   			opacity: 0.5;
   		}

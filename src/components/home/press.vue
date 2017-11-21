@@ -56,13 +56,6 @@
             date: 'Oktober 2017',
             img: 'https://blog.frame.io/wp-content/uploads/2017/10/walmart-vertical-696x414.jpg'
           }
-          // {
-          //   id: 4,
-          //   title: 'Wechsel in der carplus-Geschäftsleitung',
-          //   desc: 'Ab sofort übernimmt Frau Mag. (FH) Stiller die neue Position ein',
-          //   date: 'September 2017',
-          //   img: 'https://blog.frame.io/wp-content/uploads/2017/11/17-10-29-palm-trees-header-696x414.jpg'
-          // }
         ]
       }
     }
@@ -94,6 +87,9 @@
         position: relative;
         top: -50px;
         text-align: center;
+        -webkit-box-shadow: 10px 10px 51px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 10px 10px 51px 0px rgba(0,0,0,0.2);
+        box-shadow: 10px 10px 51px 0px rgba(0,0,0,0.2);
         .title {
           h3 {
             font-weight: bold;
@@ -113,6 +109,9 @@
     }
     .more {
       text-align: right;
+      a {
+        @extend %ghost-button-gray;
+      }
     }
   }
 </style>
